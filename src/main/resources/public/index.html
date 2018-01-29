@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="zh_CN" data-ng-app="dreamApp">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+<title>AngularJS Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" href="css/styles.css" media="screen" />
+<link rel="stylesheet" href="css/sticky-footer.css">
+
+<link rel="stylesheet" href="lib-css/bootstrap-theme.css" media="screen" />
+<link rel="stylesheet" href="lib-css/bootstrap.min.css" media="screen" />
+ 
+
+</head>
+<body>
+
+	<p>
+	<h1>
+		http://localhost/customer/{id} 的四个REST接口
+	</h1>
+	</p>
+
+	<table class="table table-responsive table-hover">
+		<thead>
+			<tr>
+		 
+				<th class="col-sm-1">Method</th>
+				<th class="col-sm-1">URL </th>
+				<th class="col-sm-2">Request Body</th>
+ 
+		 
+			</tr>
+		</thead>
+		<tbody>
+			<tr >
+				<td  >GET</td>
+				<td  >http://localhost/customer/1</td>
+				<td  >无</td> 
+			</tr>
+			<tr >
+				<td  >POST</td>
+				<td  >http://localhost/customer</td>
+				<td  >
+<pre>
+{
+	"firstName": "Jack",
+	"lastName": "Bauer",
+	"email": "Jack@builder.com"
+}</pre></td> 
+			</tr>
+			<tr >
+				<td  >PUT</td>
+				<td  >http://localhost/customer/1</td>
+				<td  >
+<pre>
+{
+	"id": 1,
+	"firstName": "Jack",
+	"lastName": "Bauer",
+	"email": "Jack@builder.com"
+}</pre></td> 
+			</tr>
+			<tr >
+				<td  >DELETE</td>
+				<td  >http://localhost/customer/1</td>
+				<td  >无</td> 
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
